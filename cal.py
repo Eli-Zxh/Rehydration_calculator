@@ -47,14 +47,14 @@ def calculate(current_weight, weight_loss, phase, osmolality=None, concentration
             tstage_water = total_water / 2
             if concentration is None:
                 raise ValueError("在继续补液阶段请输入1/2张或者1/3张")
-            elif concentration == "1/2张":
+            elif concentration == "1/3张":
                 NaCl = tstage_water / 3
                 glucose = 2 * tstage_water / 3
                 NaHCO3 = 0
-            elif concentration == "1/3张":
+            elif concentration == "1/2张":
                 NaCl = tstage_water / 3
                 glucose = 31 * tstage_water / 50
-                NaHCO3 = 7 * tstage_water / 50
+                NaHCO3 = 7 * tstage_water / 150
         else:
             raise ValueError("请选择一个阶段")
 
