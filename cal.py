@@ -19,10 +19,10 @@ def calculate_quick_ratio(total_volume, fluid_type, m_NaCl=0.9, m_NaHCO3=5, m_gl
     elif fluid_type == "2:1等张含钠液":
         NaHCO3 = 7 * total_volume / (15 * m_NaHCO3)
         NaCl = 3 * total_volume / (5 * m_NaCl)
-    elif fluid_type == "4:3:2含钠液":
+    elif fluid_type == "2:3:1含钠液":
         NaHCO3 = 7 * total_volume / (30 * m_NaHCO3)
         NaCl = 3 * total_volume / (10 * m_NaCl)
-    elif fluid_type == "2:3:1含钠液":
+    elif fluid_type == "4:3:2含钠液":
         NaHCO3 = 14 * total_volume / (45 * m_NaHCO3)
         NaCl = 2 * total_volume / (5 * m_NaCl)
 
