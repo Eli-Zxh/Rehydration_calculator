@@ -57,6 +57,12 @@ h1 {
 .radio-group {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* 确保子元素在需要时换行 */
+}
+
+.radio-row {
+    display: block; /* 确保每个 radio-row 占据一行 */
+    margin-bottom: 10px; /* 可选：增加行间距 */
 }
 
 .radio-group label {
