@@ -233,10 +233,12 @@ def create_gui():
 
         except ValueError as e:
             messagebox.showerror("错误", str(e))
+    
+    AUTHOR = "Eli-Zxh"
 
     # 创建主窗口
     root = tk.Tk()
-    root.title("补液计算器")
+    root.title(f"补液计算器 v1.2.0 -- by {AUTHOR}")
 
     # 创建选项卡
     notebook = ttk.Notebook(root)
